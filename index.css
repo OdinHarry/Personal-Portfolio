@@ -5,8 +5,12 @@ body {
   height: 100vh;
 }
 
-.navigation {
+.navigation{
   display: none;
+}
+
+.checkbox{
+    display: none;
 }
 
 .container1 {
