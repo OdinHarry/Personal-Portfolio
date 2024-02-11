@@ -1,3 +1,9 @@
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: black;
+}
 body{
     font-family:"DM Sans", sans-serif;
     margin: 0;
@@ -9,8 +15,7 @@ body{
 .header1{
     width: 100%;
 height: 10vh;
-background-color: white;
-margin-bottom: 0.5rem;
+background-color: rgb(58, 152, 177);
 
 }
 
@@ -18,7 +23,8 @@ margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin:0 2rem 0 1.5rem;
+    margin:0 1rem 0 1rem;
+    border: 0;
 }
 .heading{
     margin-left: 0;
@@ -34,7 +40,7 @@ margin-bottom: 0.5rem;
 display:inline-flex;
 align-items: center;
 justify-content: space-around;
-color:black ;
+color:white ;
 text-decoration:solid;
 font-weight: 500;
 font-size: 1rem;
@@ -81,8 +87,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    background-color: burlywood;
-    border: 2.5px solid black;
+    background-color: rgb(58, 152, 177);
 }
     
   
@@ -259,7 +264,7 @@ button {
 
   .image{
     border-radius:6.9rem;
-    border: 5px solid rgb(36, 142, 171);
+    border: 5px solid white;
   }
   
 
@@ -769,9 +774,15 @@ i{
 
   @media screen and (min-width:360px) and (max-width:768px) {
 
-
+.header1{
+  height: auto;
+}
     .header{
       display: none;
+    }
+
+    .grid1-content{
+      margin: 0;
     }
     * {
       padding: 0;
@@ -789,7 +800,6 @@ i{
       width: 100%;
       box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
       display: block;
-      border-bottom: 2px solid black;
     }
   
     .nav-container {
@@ -898,10 +908,11 @@ i{
     .logo {
       font-family: "Cedarville Cursive", cursive;
       position: absolute;
-      top: 5px;
+      top: -15px;
       right: 15px;
       font-size: 1rem;
       color: #0e2431;
+      margin-top: 0;
     }
   
     .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -933,7 +944,7 @@ i{
       height: auto;
     }
     .grid1-content{
-      margin: 20% 0 0 0;
+      margin: 0;
       text-align: center;
       font-size: 0.5rem;
     }

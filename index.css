@@ -5,7 +5,7 @@ body {
   height: 100vh;
 }
 
-.navigation{
+.navbar{
   display: none;
 }
 
@@ -159,158 +159,34 @@ button:hover::before {
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .container1 {
     width: 100%;
+    transition: 8s ease-in-out infinte;
+    background: linear-gradient(45deg,black,rgb(26, 101, 121),rgb(36, 142, 171),lightgray,black);
+    background-size: 200% 100%; /* Adjust the size as needed */
+    animation: gradientAnimation 5s ease-in-out infinite; 
+  }
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 
+  
+
   .header {
-    display: no;
+    display: none;
   }
   .container2 {
     display: none;
   }
-
-  .iam,
-  .naam {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    margin-top: 30%;
-  }
-
-  .name > h5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .bottom {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 10vh;
-  }
-
-  .profileopts {
-    display: none;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-    /* make it look decent enough */
-    background: white;
-    color: black;
-    font-family: "Avenir Next", "Avenir", sans-serif;
-  }
-  
-  #menuToggle {
-    display: inline-block; /* Adjust display */
-    position: relative;
-    top: 0; /* Adjust top */
-    right: 50px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-  }
-  
-  
-  #menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    right: -5px;
-    cursor: pointer;
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
-    -webkit-touch-callout: none;
-  }
-  
-  /* Just a quick hamburger */
-  #menuToggle span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: black;
-    border-radius: 3px;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  }
-  
-  /* Transform all the slices of hamburger into a crossmark */
-  #menuToggle input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
-  }
-  
-  /* But let's hide the middle one */
-  #menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-  
-  /* Ohyeah and the last one should go the other direction */
-  #menuToggle input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
-  }
-  
-  /* Make this absolute positioned at the top left of the screen */
-  #menu {
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    background: black; /* Ensure background color is black */
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    transform-origin: 100% 0%; /* Adjusted transform origin */
-    transform: translate(100%, 0); /* Adjusted transform */
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  }
-  
-  #menuToggle input:checked ~ #menu {
-    transform: translate(0);
-  }
-  
-  
+.iam{
+  color: white;
 }
-
-@media screen and (min-width: 768px) and (max-width: 1400px) {
-  .header {
-    display: none;
-  }
-
-  .name > h5 {
-    font-size: 2rem;
-    margin-top: 0;
-  }
-  .iam {
-    font-size: 3rem;
-  }
-  .naam {
-    font-size: 6rem;
-  }
-  .btn1,
-  .btn2 {
-    font-size: 1rem;
-  }
-
-  .container1 {
-    width: 100%;
-  }
-  .container2 {
-    display: none;
-  }
-  .name {
-    margin-top: 15%;
-  }
-
   .iam,
   .naam {
     display: inline-flex;
@@ -324,37 +200,21 @@ button:hover::before {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
   }
   .bottom {
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 20vh;
+    display: none;
   }
 
   .profileopts {
     display: none;
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .container {
-    max-width: 900px;
-    width: 100%;
-    margin: auto;
-    background: white;
-    border-bottom: 1px solid black;
   }
 
   .navbar {
     width: 100%;
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
     display: block;
+    background:linear-gradient(45deg,white,whitesmoke,lightgray,darkgray);
   }
 
   .nav-container {
@@ -463,10 +323,11 @@ button:hover::before {
   .logo {
     font-family: "Cedarville Cursive", cursive;
     position: absolute;
-    top: 5px;
+    top: -15px;
     right: 15px;
     font-size: 1rem;
     color: #0e2431;
+    margin-top: 0;
   }
 
   .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -490,4 +351,6 @@ button:hover::before {
   .nav-container input[type="checkbox"]:checked ~ .logo {
     display: none;
   }
+ 
 }
+
