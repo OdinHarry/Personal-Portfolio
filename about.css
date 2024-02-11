@@ -935,6 +935,7 @@ i{
     .grid1-content{
       margin: 20% 0 0 0;
       text-align: center;
+      font-size: 0.5rem;
     }
     .grid1-image{
       margin: 20% 0 20% 0;
@@ -971,7 +972,7 @@ i{
     .grid-skills{
       position: absolute;
       display: block;
-      margin-left: 20%;
+      margin-left: 16%;
       margin-top: 0;
       height: auto;
     }
