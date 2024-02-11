@@ -1,378 +1,380 @@
-body{
-    font-family:"DM Sans", sans-serif;
-    margin: 0;
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
 }
-.header{
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin:0 2rem 0 1.5rem;
+  margin: 0 2rem 0 1.5rem;
 }
-.heading{
+.heading {
   margin-left: 0;
 }
 
-.heading>h2{
+.navbar {
+  display: none;
+}
+
+.heading > h2 {
   font-family: "Cedarville Cursive", cursive;
   color: black;
 }
 
-.links{
-    margin: 0 1.2rem 0 1.2rem;
-display:inline-flex;
-align-items: center;
-justify-content: space-around;
-color:black ;
-text-decoration:solid;
-font-weight: 500;
-font-size: 1rem;
-transition:border-bottom 0.3s ease;
+.links {
+  margin: 0 1.2rem 0 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  color: black;
+  text-decoration: solid;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: border-bottom 0.3s ease;
 }
-.links>i{
-    margin: 0 4px 2px 0;
+.links > i {
+  margin: 0 4px 2px 0;
 }
 button {
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-    border: none;
-    background: none;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  button::before {
-    margin-left: auto;
-  }
-  
-  button::after, button::before {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: burlywood ;
-    display: block;
-    transition: 0.5s;
-  }
-  
-  button:hover::after, button:hover::before {
-    width: 100%;
-  }
-
-  .container2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200vh;
-    background: linear-gradient(45deg,black,burlywood,rgb(36, 142, 171),black);
-  }
-.container2:hover {
-    animation-play-state: paused; /* Pauses the animation on hover */
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 
-  .image-settings{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+button::before {
+  margin-left: auto;
+}
 
-  .image{
-    width: 58%;
-    height: auto;
-    border: 5px solid black;
-    transition: transform 0.3s ease;
-  }
-
-  .image:hover{
-    transform: scale(1.1);
-  }
-
-  .footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 0;
-    background-color: black;
-    color: white;
-    font-size: 1.2rem;
-  }
-
-
-  
-
-
-  .card4 {
-    width: fit-content;
-    height: fit-content;
-    background-color:black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 25px 25px;
-    gap: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
-  }
-  
-  /* for all social containers*/
-  .socialContainer {
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background-color: rgb(44, 44, 44);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    transition-duration: .3s;
-  }
-  /* instagram*/
-  .containerOne:hover {
-    background-color: #d62976;
-    transition-duration: .3s;
-  }
-  /* twitter*/
-  .containerTwo:hover {
-    background-color: #00acee;
-    transition-duration: .3s;
-  }
-  /* linkdin*/
-  .containerThree:hover {
-    background-color: #0072b1;
-    transition-duration: .3s;
-  }
-  /* Whatsapp*/
-  .containerFour:hover {
-    background-color: #128C7E;
-    transition-duration: .3s;
-  }
-  
-  .socialContainer:active {
-    transform: scale(0.9);
-    transition-duration: .3s;
-  }
-  
-  .socialSvg {
-    width: 17px;
-  }
-  
-  .socialSvg path {
-    fill: rgb(255, 255, 255);
-  }
-  
-  .socialContainer:hover .socialSvg {
-    animation: slide-in-top 0.3s both;
-  }
-  
-  @keyframes slide-in-top {
-    0% {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-  
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-
-  @media screen and (min-width:360px) and (max-width:768px) {
-    body{
-      height: auto;
-    }
-    .header{
-      display: none;
-  }
-
-    .container2{
-      background: none;
-      height: auto;
-      display: block;
-    }
-.image-settings{
+button::after,
+button::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: burlywood;
   display: block;
+  transition: 0.5s;
 }
 
-    .image{
-      margin: 15% 0 28% 0;
-      width: 100%;
-      border: 0;
-    }
+button:hover::after,
+button:hover::before {
+  width: 100%;
+}
 
-    .footer{
-     font-size: 0.8rem;
-     align-items: flex-end;
-     height: auto;
-    }
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200vh;
+  background: linear-gradient(
+    45deg,
+    black,
+    burlywood,
+    rgb(36, 142, 171),
+    black
+  );
+}
+.container2:hover {
+  animation-play-state: paused; /* Pauses the animation on hover */
+}
 
-    .socialContainer{
-      width: 20px;
-      height: 20px;
-      margin: 0;
-    }
-    .footer1,.footer2{
-      margin-left: 1rem;
-      align-items: center;
-      margin-bottom: 5%;
-    }
+.image-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-                                                                  /* header */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    
-    .container {
-      max-width: 900px;
-      width: 100%;
-      margin: auto;
-      border-bottom: 1px solid black;
-    }
-    
-    .navbar {
-      width: 100%;
-      box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
-    }
-    
-    .nav-container {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-  
-    }
-    
-    .navbar .menu-items {
-      display: flex;
-    }
-    
-    .navbar .nav-container li {
-      list-style: none;
-    }
-    
-    .navbar .nav-container a {
-      text-decoration: none;
-      color: #0e2431;
-      font-weight: 500;
-      font-size: 1.2rem;
-      padding: 0.7rem;
-    }
-    
-    .navbar .nav-container a:hover{
-        font-weight: bolder;
-    }
-    
-    .nav-container {
-      display: block;
-      position: relative;
-      height: 60px;
-    }
-    
-  
-    /* pos */
-    .nav-container .checkbox {
-      position: absolute;
-      display: block;
-      height: 32px;
-      width: 20px;
-      top: 20px;
-      left: 20px;
-      z-index: 5;
-      opacity: 0;
-      cursor: pointer;
-    }
-    
-    .nav-container .hamburger-lines {
-      display: block;
-      height: 18px;
-      width: 22px;
-      position: absolute;
-      top: 17px;
-      left: 15px;
-      z-index: 2;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    
-    .nav-container .hamburger-lines .line {
-      display: block;
-      height: 4px;
-      width: 100%;
-      border-radius: 10px;
-      background: #0e2431;
-    }
-    
-    .nav-container .hamburger-lines .line1 {
-      transform-origin: 0% 0%;
-      transition: transform 0.4s ease-in-out;
-    }
-    
-    .nav-container .hamburger-lines .line2 {
-      transition: transform 0.2s ease-in-out;
-    }
-    
-    .nav-container .hamburger-lines .line3 {
-      transform-origin: 0% 100%;
-      transition: transform 0.4s ease-in-out;
-    }
-    
-    .navbar .menu-items {
-      padding-top: 120px;
-      box-shadow: inset 0 0 2000px black;
-      height: 80vh;
-      width: 100%;
-      transform: translate(-150%);
-      display: flex;
-      flex-direction: column;
-      margin-left: -40px;
-      padding-left: 70px;
-      transition: transform 0.5s ease-in-out;
-      text-align: center;
-      background-color: black;
-      opacity: 0.8;
-    }
-    
-    .navbar .menu-items li a {
-      margin-bottom: 1.2rem;
-      font-size: 1.2rem;
-      font-weight: 500;
-      color: white;
-    }
-    
-    .logo {
-      font-family:"Cedarville Cursive", cursive ;
-      position: absolute;
-      top: 5px;
-      right: 15px;
-      font-size: 1rem;
-      color: #0e2431;
-    }
-    
-    .nav-container input[type="checkbox"]:checked ~ .menu-items {
-      transform: translateX(0);
-    }
-    
-    .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-      transform: rotate(45deg);
-      background: white;
-    }
-    
-    .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
-      transform: scaleY(0);
-    }
-    
-    .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-      transform: rotate(-45deg);
-      background: white;
-    }
-    
-    .nav-container input[type="checkbox"]:checked ~ .logo{
-      display: none;
-    }
-    
+.image {
+  width: 58%;
+  height: auto;
+  border: 5px solid black;
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.card4 {
+  width: fit-content;
+  height: fit-content;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
   }
-  
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  body {
+    height: auto;
+  }
+  .header {
+    display: none;
+  }
+
+  .container2 {
+    background: none;
+    height: auto;
+    display: block;
+  }
+  .image-settings {
+    display: block;
+  }
+
+  .image {
+    margin: 15% 0 28% 0;
+    width: 100%;
+    border: 0;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+    align-items: flex-end;
+    height: auto;
+  }
+
+  .socialContainer {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+  }
+  .footer1,
+  .footer2 {
+    margin-left: 1rem;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+
+  /* header */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid black;
+  }
+
+  .navbar {
+    width: 100%;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+    display: block;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .navbar .menu-items {
+    display: flex;
+  }
+
+  .navbar .nav-container li {
+    list-style: none;
+  }
+
+  .navbar .nav-container a {
+    text-decoration: none;
+    color: #0e2431;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+  }
+
+  .navbar .nav-container a:hover {
+    font-weight: bolder;
+  }
+
+  .nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+  }
+
+  /* pos */
+  .nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 20px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .nav-container .hamburger-lines {
+    display: block;
+    height: 18px;
+    width: 22px;
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+  }
+
+  .nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .navbar .menu-items {
+    padding-top: 120px;
+    box-shadow: inset 0 0 2000px black;
+    height: 80vh;
+    /* width: 100%; */
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 70px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    background-color: black;
+    opacity: 0.8;
+  }
 
 
-  
+  .navbar .menu-items li a {
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+  }
+
+  .logo {
+    font-family: "Cedarville Cursive", cursive;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 1rem;
+    color: #0e2431;
+  }
+
+  .nav-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+    background: white;
+  }
+
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+    background: white;
+  }
+
+  .nav-container input[type="checkbox"]:checked ~ .logo {
+    display: none;
+  }
+}
