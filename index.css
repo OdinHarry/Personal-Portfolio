@@ -1,0 +1,259 @@
+
+body{
+    font-family:"DM Sans", sans-serif;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+.container1{
+    width: 55%;
+height: 100vh;
+background-color: white;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading{
+    margin-left: 15px;
+}
+
+.heading>h2{
+    font-family: "Cedarville Cursive", cursive;
+    color: black;
+}
+
+ul{
+    display: none;
+}
+
+
+.links{
+    margin: 0 1.2rem 0 1.2rem;
+display:inline-flex;
+align-items: center;
+justify-content: space-around;
+color:black ;
+text-decoration:solid;
+font-weight: 500;
+font-size: 15px;
+transition:border-bottom 0.3s ease;
+}
+.links>i{
+    margin: 0 4px 2px 0;
+}
+button {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  button::before {
+    margin-left: auto;
+  }
+  
+  button::after, button::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: burlywood ;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  button:hover::after, button:hover::before {
+    width: 100%;
+  }
+
+
+.name{
+    display: block;
+    text-align: center;
+    margin-top: 25%;
+    color: black;
+}
+
+.iam{
+    display: inline;
+    font-size: 40px;
+    font-weight: normal;
+    color: gray;
+}
+.name>h5{
+    margin-bottom: 50px;
+    padding: 0;
+    color: rgb(36, 142, 171);
+    line-height: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration:double;
+    
+}
+.naam{
+    font-size: 80px;
+    
+}
+
+.btn1{
+    padding: 15px;
+    background-color:rgb(36, 142, 171);
+    border: 0;
+    font-size: 13px;
+    font-weight:600;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-decoration: solid;
+
+}
+.btn1:hover{
+    background-color: burlywood;
+}
+
+.btn2{
+    padding: 15px;
+    margin-left: 5px;
+    background-color: white;
+    border: 0;
+    font-size: 13px;
+    font-weight:600;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: solid;
+    color: black;
+}
+
+.btn2:hover{
+    background-color: burlywood;
+    color: white;
+}
+
+.bottom{
+    position: relative;
+    text-align: center;
+    margin-top:20%;
+    color: black;
+}
+
+.container2 {
+    height: 100%;
+    width: 45%;
+    background-image: url(./images/Designer.png);
+    background-size: cover;
+   
+}
+
+  
+
+  .image1{
+max-width: 100%;
+max-height: 100%;
+  }
+
+
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .container1{
+        width: 100%;
+    }
+    .container2{
+        display: none;
+    }
+
+    .iam,.naam{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        margin-top: 30%;
+    }
+
+    .name>h5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 10vh;
+}
+
+    .profileopts{
+        display: none;
+    }
+   
+}
+
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+    .header{
+        font-size: 1.5rem;
+    }
+
+    .links{
+        font-size: 1.3rem;
+    }
+    .name>h5{
+        font-size: 2rem;
+        margin-top: 0;
+    }
+.iam{
+    font-size: 3rem;
+}
+    .naam{
+        font-size: 6rem;
+    }
+    .btn1,.btn2{
+        font-size: 1rem;
+    }
+
+    .container1{
+        width: 100%;
+    }
+    .container2{
+        display: none;
+    }
+.name{
+    margin-top: 15%;
+}
+
+    .iam,.naam{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        margin-top: 30%;
+    }
+
+    .name>h5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+.bottom{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 20vh;
+}
+
+    .profileopts{
+        display: none;
+    }
+   
+}
+
+
+
+
+
+
+  
