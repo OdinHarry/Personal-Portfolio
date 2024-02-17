@@ -203,6 +203,19 @@ button:hover::before {
   color: white;
 }
 
+#project2 {
+  background-image: url(./images/background.png);
+  background-size: contain;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#project2 > a {
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+}
+
 .grid > h3 {
   color: white;
   text-align: center;

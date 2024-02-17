@@ -62,15 +62,5 @@ function winner() {
 
 
 function reset(){
-    alert("Game Has Restarted !")
-    blocks.forEach((block)=>{
-        block.innerHTML = '';
-        block.classList.remove('winner');
-    });
-
-    blocks.forEach((block)=>{
-        block.addEventListener("click",blockClick);
-    });
-
-    i=1;
+  location.reload();
 }
